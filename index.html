@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #a{
+            height: 700px;
+            background-image: url("https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4");
+            
+        }
+        #b{
+            height: 60px;
+            width: 150px;
+            position: absolute;
+            left: 100px;
+            top: 20px; 
+        }
+        #c{
+            height: 40px;
+            width: 130px;
+            background-color: transparent;
+            border: solid 0.1px white;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 30px;
+            right: 200px;
+        }
+        button{
+            color: white;
+            height: 40px;
+            width: 100px;
+            border: none;
+            background-color: red;
+            border-radius: 10px;
+            position: absolute;
+            right: 90px;
+            top: 30px;
+        }
+        #ba{
+            text-decoration: none;
+            color: white;
+        }
+        #d{
+            color: white;
+            height: 150px;
+            width: 500px;
+            position: absolute;
+            top: 150px;
+            left: 500px;
+            text-align: center;
+            font-size:60px;
+        }
+        #e{
+            color: white;
+            height: 30px;
+            width: 500px;
+            position: absolute;
+            top: 320px;
+            left: 500px;
+            text-align: center;
+            
+        }
+        #f{
+             color: white;
+            height: 30px;
+            width: 600px;
+            position: absolute;
+            top: 390px;
+            left: 450px;
+            text-align: center;
+        }
+        input{
+            color: white ;
+            position: absolute;
+            top: 470px;
+            left: 450px;
+            height: 50px;
+            width: 400px;
+            border: solid 0.2px white;
+            border-radius: 10px;
+            background-color:  rgb(0,0,0,0.2);
+        }
+        #g{
+            position: absolute;
+            top: 470px;
+            left: 860px;
+            height: 50px;
+            width: 150px;
+            border-radius: 10px;
+            background-color:  red;
+        }
+        .line{
+            background-color: black;
+            background-size: cover;
+            height:30px;
+            width: 1501px;
+            background: radial-gradient(50% 530% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), #000;
+            border-top: 4px solid #ff007f;
+            border-top-left-radius: 100% 60px;
+            border-top-right-radius: 100% 60px;
+            padding:10px;
+            color:white;
+            position: absolute;
+            top: 670px;
+            margin: 0px;
+        }
+        #h{
+            color: white;
+            height: 2100px;
+            width: 100%;
+            background-color: black;
+        }
+        #i{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 150px;
+            border-radius: 10px;
+            
+        }
+        #j{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 350px;
+            border-radius: 10px;
+        }
+        #k{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 550px;
+            border-radius: 10px;
+        }
+        #l{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 750px;
+            border-radius: 10px;
+        }
+        #m{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 950px;
+            border-radius: 10px;
+        }
+        #n{
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            left: 1150px;
+            border-radius: 10px;
+        }
+        .a{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            left: 150px;
+            top: 850px;
+        }
+        .b{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 850px;
+            left: 350px;
+        }
+        .c{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 850px;
+            left: 550px;
+        }
+        .d{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 850px;
+            left: 750px;
+        }
+        .e{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 850px;
+            left: 950px;
+        }
+        .f{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 850px;
+            left: 1150px;
+        }
+        .g{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            position: absolute;
+            top: 1200px;
+            left: 150px;
+            background: linear-gradient(135deg, #192247, #210e2e);
+        }
+        .h{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            position: absolute;
+            top: 1200px;
+            left: 480px;
+            background: linear-gradient(135deg, #192247, #210e2e);
+        }
+        .i{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            position: absolute;
+            top: 1200px;
+            left: 810px;
+            background: linear-gradient(135deg, #192247, #210e2e);
+        }
+        .j{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            position: absolute;
+            top: 1200px;
+            left: 1140px;
+            background: linear-gradient(135deg, #192247, #210e2e);
+        }
+        .aa{
+            font-size: 50px;
+            position: absolute;
+            top: 220px;
+            left: 200px;
+        }
+        .bb{
+            font-size: 50px;
+            position: absolute;
+            top: 220px;
+            left: 200px;
+        }
+        .cc{
+            font-size: 50px;
+            position: absolute;
+            top: 220px;
+            left: 200px;
+        }
+        .dd{
+            font-size: 50px;
+            position: absolute;
+            top: 220px;
+            left: 200px;
+        }
+        .aaa{
+            position: absolute;
+            top: 1530px;
+            left: 150px;
+        }
+        .bbb{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 1630px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        .ccc{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 1710px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        .ddd{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 1790px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        .eee{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 1870px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        .fff{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 1950px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        .ggg{
+            height: 70px;
+            width: 1200px;
+            position: absolute;
+            top: 2030px;
+            left: 150px;
+            background-color: rgb(71, 70, 70);
+        }
+        #aa{
+            position: absolute;
+            top: 2150px;
+            left: 450px;
+        }
+        #bb{
+            position: absolute;
+            top: 1750px;
+        }
+        #cc{
+            background-color: red;
+            position: absolute;
+            top: 2220px;
+            left: 900px;
+            height: 50px;
+        }
+        #dd{
+            position: absolute;
+            top: 2350px;
+            left: 150px;
+        }
+        #ta{
+            height: 190px;
+            width: 250px;
+            position: absolute;
+            top: 2450px;
+            left: 150px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        #tb{
+            height: 190px;
+            width: 250px;
+            position: absolute;
+            top: 2450px;
+            left: 450px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        #tc{
+            height: 190px;
+            width: 250px;
+            position: absolute;
+            top: 2450px;
+            left: 750px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        #td{
+            height: 190px;
+            width: 250px;
+            position: absolute;
+            top: 2450px;
+            left: 1050px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .xx{
+            color: white;
+        }
+        #st{
+            color: white;
+            height: 30px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            position: absolute;
+            top: 2650px;
+            left: 150px;
+        }
+        #id{
+            position: absolute;
+            top: 2700px;
+            color: white;
+            left: 150px;
+        }
+        #is{
+            position: absolute;
+            top: 2750px;
+            left: 150px;
+            color: white;
+        }
+        .id{
+            position: absolute;
+            top: 2770px;
+            left: 580px;
+            
+        }
+        #i:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #j:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #k:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #l:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #m:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #n:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <img id="b" src="Netflix_Entertainment_Logo_PNG___TopPNG-removebg-preview.png" alt="">
+        <select id="c">
+            <option style="color: black;">English</option>
+            <option style="color: black;">Telugu</option>
+        </select>
+        <button><a id="ba" href="https://www.netflix.com/in/login?serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22IDENTIFICATION%22%2C%22clcsSessionId%22%3A%22d8e04f32-8ea9-49a1-bcc0-2662fea0ee3c%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%7D%7D">Sign in</a></button>
+        <h1 id="d">Unlimited movie, show,and more</h1>
+        <h2 id="e">Starts at ₹0.1. Cancel at any time.</h2>
+        <h3 id="f">Ready to watch? Enter your email to create or restart your membership.</h3>
+        <input type="email" placeholder="Enter your email">
+        <button id="g">Get Started ></button>
+    </div>
+    <div class="line"></div>
+    <div id="h">
+        <h1 style="color: white; padding-left: 150px;">Trending Now</h1>
+        <img id="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_Iix_IQMfoMvLsrbeS8IA7vziOY_qcWk7g&s" alt="">
+        <img id="j" src="https://popcornreviewss.com/wp-content/uploads/2026/01/Taskaree-The-Smugglers-Web-2026-Thriller-Hindi-Series-Review.jpg" alt="">
+        <img id="k" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdfOkaBL6osdqMbNnQiutG_JCdKkhjaQypA&s" alt="">
+        <img id="l" src="https://upload.wikimedia.org/wikipedia/en/e/e4/Tere_Ishk_Mein_poster.jpg" alt="">
+        <img id="m" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUalbJj9ekdHac2_kweP-A82asx_0N9wySA&s" alt="">
+        <img id="n" src="https://m.media-amazon.com/images/M/MV5BNTEwY2I1NjYtY2ZkMC00YjhhLWFhNWItOTA3NDkyODE5MjcxXkEyXkFqcGc@._V1_.jpg" alt="">
+        <h1 style="color: white; position: absolute; top: 1090px; left: 150px;">More reasons to join</h1>
+        <h1 class="a">1</h1>
+        <h1 class="b">2</h1>
+        <h1 class="c">3</h1>
+        <h1 class="d">4</h1>
+        <h1 class="e">5</h1>
+        <h1 class="f">6</h1>
+        <div class="g">
+            <h1 style="padding-left: 15px;">Enjoy on your TV</h1>
+            <h3 style="padding-left: 15px;">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+            <span class="aa">📺</span>
+        </div>
+        <div class="h">
+            <h1 style="padding-left: 15px">Download your shows to watch offline</h1>
+            <h3 style="padding-left: 15px">Save your favourites easily and always have something to watch.</h3>
+            <span class="bb">⬇️</span>
+        </div>
+        <div class="i">
+            <h1 style="padding-left: 15px">Watch everywhere</h1>
+            <h3 style="padding-left: 15px">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+            <span class="cc">🔭</span>
+        </div>
+        <div class="j">
+            <h1 style="padding-left: 15px">Create profiles for kids</h1>
+            <h3 style="padding-left: 15px">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</h3>
+            <span class="dd">👶</span>
+        </div>
+        <div class="aaa">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="bbb">
+            <h1 style="padding-left: 15px;">What is Netflix?</h1>
+        </div>
+        <div class="ccc">
+            <h1 style="padding-left: 15px;">How much does netflix cost?</h1>
+        </div>
+        <div class="ddd">
+            <h1 style="padding-left: 15px;">Where can I watch?</h1>
+        </div>
+        <div class="eee">
+            <h1 style="padding-left: 15px;">How do I cancle?</h1>
+        </div>
+        <div class="fff">
+            <h1 style="padding-left: 15px;">What can I watch in netflix?</h1>
+        </div>
+        <div class="ggg">
+            <h1 style="padding-left: 15px;">Is netflix good for kids?</h1>
+        </div>
+        <div id="aa">
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        </div>
+        <div id="bb">
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <button id="cc">Get started ></button>
+        </div>
+        <div id="dd">
+            <h3>Questions? Call 000-800-919-1743</h3>
+        </div>
+        <div id="ta">
+            <a class="xx" href="https://help.netflix.com/en/node/412">FAQ</a><br>
+            <a class="xx" href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a><br>
+            <a class="xx" href="https://help.netflix.com/legal/privacy">Privacy</a><br>
+            <a class="xx" href="https://fast.com/">Speed Test</a>
+        </div>
+        <div id="tb">
+            <a class="xx" href="https://help.netflix.com/en">Help Centre</a><br>
+            <a class="xx" href="https://jobs.netflix.com/">Jobs</a><br>
+            <a class="xx" href="">Cookie Preferences</a><br>
+            <a class="xx" href="https://help.netflix.com/legal/notices">Legal Notices</a>
+        </div>
+        <div id="tc">
+            <a class="xx" href="http://netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount&serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22IDENTIFICATION%22%2C%22clcsSessionId%22%3A%221d97bcf8-cb03-4f23-841a-54ec90b3dd0c%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%2C%22login.navigationSettings%22%3A%7B%22nextPage%22%3A%22https%3A%2F%2Fwww.netflix.com%2Fyouraccount%22%7D%7D%7D">Account</a><br>
+            <a class="xx" href="https://help.netflix.com/en/node/14361">Ways to Watch</a><br>
+            <a class="xx" href="https://help.netflix.com/en/node/134094">Corporate Information</a><br>
+            <a class="xx" href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+        </div>
+        <div id="td">
+            <a class="xx" href="https://media.netflix.com/en/">Media Centre</a><br>
+            <a class="xx" href="https://help.netflix.com/legal/termsofuse">Terms of Use</a><br>
+            <a class="xx" href="https://help.netflix.com/en/contactus">Contact Us</a>
+        </div>
+        <div>
+            <select id="st">
+                <option>English</option>
+                <option>Telugu</option>
+            </select>
+        </div>
+        <h3 id="id">Netflix India</h3>
+        <h5 id="is">This page is protected by Google reCAPTCHA to ensure you're not a bot.</h5><a class="id" href="">Learn more</a>
+     </div>
+</body>
+</html>
